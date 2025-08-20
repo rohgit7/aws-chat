@@ -1,4 +1,4 @@
-let socket = null;
+let socket =  new WebSocket('wss://6o4oi48aoh.execute-api.ap-south-1.amazonaws.com/production/');;
 let username = "";
 
 fetch('/get-ws-endpoint')
