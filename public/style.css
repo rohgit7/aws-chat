@@ -276,36 +276,7 @@ body {
   }
 }
 
-/* ===== Responsive Fixes ===== */
-
-/* Tablet and smaller */
-@media (max-width: 1024px) {
-  .chat-wrapper {
-    flex-direction: column;
-  }
-
-  .left-panel {
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-  }
-
-  .join-box {
-    flex-direction: row;
-    gap: 8px;
-    margin: 0;
-  }
-
-  .users-box {
-    display: none; /* hide user list on smaller screens */
-  }
-
-  .chat-title {
-    font-size: 18px;
-  }
-}
+/* ===== Responsive Fixes =====*/
 
 /* Mobile */
 @media (max-width: 600px) {
