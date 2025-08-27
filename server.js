@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/get-ws-endpoint', (req, res) => {
-  res.json({ endpoint: process.env.WS_ENDPOINT });
+  res.json({ endpoint: process.env.WS_ENDPOINT || "wss://6o4oi48aoh.execute-api.ap-south-1.amazonaws.com/production/" });
 });
 
 

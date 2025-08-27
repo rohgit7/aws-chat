@@ -233,3 +233,114 @@ body {
 .message-bar button:hover {
   background: var(--primary-dark);
 }
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+/* Tablets (max-width: 992px) */
+@media (max-width: 992px) {
+  .chat-wrapper {
+    flex-direction: column;
+  }
+
+  .left-panel {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .brand {
+    margin-bottom: 0;
+  }
+
+  .join-box {
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 0;
+  }
+
+  .join-box input {
+    flex: 1;
+  }
+
+  .users-box {
+    display: none; /* Hide users list on tablets for more space */
+  }
+
+  .right-panel {
+    flex: 1;
+    border-left: none;
+  }
+}
+
+/* Mobiles (max-width: 600px) */
+@media (max-width: 600px) {
+  body {
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .chat-wrapper {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .left-panel {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .brand h1 {
+    font-size: 18px;
+  }
+
+  .join-box {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .join-box input,
+  .join-box button {
+    width: 100%;
+  }
+
+  .chat-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .chat-title {
+    font-size: 18px;
+  }
+
+  .disconnect-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .messages-area {
+    padding: 10px;
+    gap: 6px;
+  }
+
+  .messages-area p {
+    max-width: 85%;
+    font-size: 13px;
+  }
+
+  .message-bar {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .message-bar input,
+  .message-bar button {
+    width: 100%;
+  }
+}
